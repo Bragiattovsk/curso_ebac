@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button{
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+body, input, textarea{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+body{
+    background-color: #dadfe0;
+}
+
+header{
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+    font-size: 27px;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 25px;
+    color: #ecf0f1;
+}
+
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header nav li a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-list img{
+    height: 50px;
+    margin-top: 16px;
+}
+
+.contact-list li{
+    display: inline;
+    margin-left: 45px;
+}
+
+.contact-list li a{
+    text-decoration: none;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+    color: #182c61
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.profile-picture{
+    margin-right: 32px;
+    height: 500px;
+    border-radius: 100px;
+    border: 10px solid #182c61
+}
+
+.social-links img{
+    height: 30px;
+    margin-top: 15px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 302px;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+form button{
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #314e9e;
+}
+
+input:focus, textarea:focus{
+    outline: 2px solid #182c61;
+}
+
+footer{
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
