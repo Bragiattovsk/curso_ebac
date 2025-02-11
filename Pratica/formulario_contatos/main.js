@@ -16,6 +16,8 @@ function adicionaLinha(){
 
     if (nomes.includes(inputNomeContato.value)){
         alert(`O contato ${inputNomeContato.value} já foi inserido`);
+    } else if (numeros.includes(inputTelefoneContato.value)){
+        alert(`O número ${inputTelefoneContato.value} já foi inserido`);
     } else{
         nomes.push(inputNomeContato.value);
         numeros.push(inputTelefoneContato.value);
@@ -28,8 +30,8 @@ function adicionaLinha(){
         linhas += linha;
     }
 
-    inputNomeContato = '';
-    inputTelefoneContato = '';
+    inputNomeContato.value = '';
+    inputTelefoneContato.value = '';
 }
 
 function atualizaTabela(){
