@@ -42,7 +42,7 @@ button{
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 #botao-cancelar{
@@ -63,7 +63,9 @@ ul li{
 }
 
 ul li img{
-    width: 100%;
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
 }
 
 .overlay-imagem-link{
@@ -72,7 +74,7 @@ ul li img{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 98%;
     opacity: 0;
     transition: all ease 1s;
 }
