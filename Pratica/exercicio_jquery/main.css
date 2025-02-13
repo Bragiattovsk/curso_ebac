@@ -17,7 +17,7 @@ header{
     display: flex;
     justify-content: center;
     background-color: rgb(45, 82, 247);
-    color: #d8d8d8;
+    color: #ffffff;
     width: 100%;
 }
 
@@ -44,16 +44,58 @@ input{
     flex: 1 1 0%;
     padding: 8px;
     border-radius: 8px;
+    font-size: 15px;
 }
 
 button{
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
+    background-color: rgb(7, 219, 0);
+    color: #fff;
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(9, 255, 0);
 }
 
 ul{
     padding: 16px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+ul li:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+#display-message{
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.mensagem-sucesso{
+    padding: 20px 50px;
+    background-color: #e4e4e4d8;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
 }
 
 footer{
@@ -66,4 +108,14 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #d8d8d8;
+}
+
+footer p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
