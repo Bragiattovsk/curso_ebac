@@ -27,10 +27,23 @@ body{
 }
 
 header{
+    font-size: 27px;
+}
+
+.container-header{
     background-color: #182c61;
     color: #ecf0f1;
-    padding: 16px 0;
-    font-size: 27px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 45px;
+}
+
+nav{
+    display: none;
+    padding: 14px 0;
+    background-color: #314e9e;
 }
 
 header nav li{
@@ -49,6 +62,19 @@ header nav li a:hover{
     text-decoration: underline;
 }
 
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
 .container{
     max-width: 1200px;
     width: 100%;
@@ -56,7 +82,6 @@ header nav li a:hover{
     font-size: 20px;
 }
 
-header .container,
 section .container{
     display: flex;
     align-items: center;
@@ -96,8 +121,8 @@ section p{
 
 .profile-picture{
     margin-right: 32px;
-    height: 500px;
-    border-radius: 100px;
+    height: 350px;
+    border-radius: 50px;
     border: 10px solid #182c61
 }
 
