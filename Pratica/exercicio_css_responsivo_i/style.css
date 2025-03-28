@@ -1,0 +1,37 @@
+@charset "UFT-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+.container-header{
+    background-color: #1e1e1e;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 45px;
+    margin-bottom: 2px;
+}
+
+nav{
+    padding: 14px 20px;
+    background-color: #222222;
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 0 20px;
+}
