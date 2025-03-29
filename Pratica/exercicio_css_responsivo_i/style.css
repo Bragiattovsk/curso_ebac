@@ -198,6 +198,7 @@ footer p{
 
     .sobre p{
         max-width: 90%;
+        margin: 0 auto;
     }
 
     .flashes{
@@ -231,20 +232,19 @@ footer p{
     
     .sobre p {
         font-size: 1em;
+        margin: 0 auto;
     }
     
     .flashs {
         grid-template-columns: 100%;
     }
+
+    .produtos{
+        padding-bottom: 350px;
+    }
     
     .produtos img {
         width: 100%;
         height: 250px;
-    }
-
-    footer{
-        position: relative;
-        z-index: 10;
-        margin-top: 20px;
     }
 }
