@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Cards</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .card-img-overlay{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Bootstrap - Cards</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Cabeçalho do card
+                    </div>
+                    <img src="https://placehold.co/100x100" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt est nobis nostrum! Dolorem cumque suscipit similique illum! Harum, dicta iure. Eum omnis nihil adipisci minima in asperiores qui. Necessitatibus, a!</p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2022/02/07/12/17/street-6999284_960_720.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt est nobis nostrum! Dolorem cumque suscipit similique illum! Harum, dicta iure. Eum omnis nihil adipisci minima in asperiores qui. Necessitatibus, a!</p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <article class="card">
+                    <header class="card-header">
+                        Desenvolvimento WEB
+                    </header>
+                    <img src="https://placehold.co/100x100" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Cards do Bootstrap</h4>
+                        <p class="card-text">Conheça os Cards do Bootstrap e suas funções</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>03/04/2025 às 09:08</time>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
