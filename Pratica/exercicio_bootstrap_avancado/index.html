@@ -5,36 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
         <div class="navbar navbar-expand-lg">
             <div class="container">
-                <h1>Título do site</h1>
+                <h1>Milena Tattoo Ink.</h1>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Início</a>
+                            <a class="nav-link active" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Início</a>
+                            <a class="nav-link" href="#flashs">Flashs</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <div class="carousel-div">
+        <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="5000" class="carousel-item active">
+                    <img class="d-block w-100" src="images/banner.png" alt="">
+                </div>
+                <div data-bs-interval="5000" class="carousel-item">
+                    <img class="d-block w-100" src="images/girl-tattoo.png" alt="">
+                </div>
+                <div data-bs-interval="5000" class="carousel-item">
+                    <img class="d-block w-100" src="images/skull-tattoo.png" alt="">
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
     <div data-bs-spy="scroll" data-bs-target="#header">
-        
+        <section id="sobre">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <img id="imagem-estudio" src="./images/estudio.png" alt="Imagem da loja">
+                </div>
+                <div class="col-4">
+                    <h1>Sobre o estúdio</h1>
+                    <p>A Milena Tattoo Ink é um estúdio de tatuagem especializado no estilo old school, trazendo traços marcantes e cores vibrantes desde 2022. Nosso compromisso é transformar paixão em arte, criando tatuagens autênticas e cheias de personalidade.</p>
+                    <p>Movidos pelo amor à tatuagem tradicional e à cultura que a envolve, buscamos sempre proporcionar a melhor experiência para nossos clientes, garantindo qualidade, segurança e um ambiente acolhedor.</p>
+                    <p>Venha conhecer nosso estúdio e prepare-se para eternizar sua história na pele com estilo e atitude!</p>
+                </div>
+            </div>
+        </section>
+        <section id="flashs">
+            <div class="row">
+                <h1>Flashs</h1>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <img class="flash" src="images/flashs/Flash1.jpg" alt="Flash 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Flash 1</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <img class="flash" src="images/flashs/Flash2.jpg" alt="Flash 2">
+                        <div class="card-body">
+                            <h4 class="card-title">Flash 1</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <img class="flash" src="images/flashs/Flash3.jpg" alt="Flash 3">
+                        <div class="card-body">
+                            <h4 class="card-title">Flash 1</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <img class="flash" src="images/flashs/Flash4.jpg" alt="Flash 4">
+                        <div class="card-body">
+                            <h4 class="card-title">Flash 1</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <img class="flash" src="images/flashs/Flash5.jpg" alt="Flash 5">
+                        <div class="card-body">
+                            <h4 class="card-title">Flash 1</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark">
+                        <img class="flash" src="images/flashs/Flash6.jpg" alt="Flash 6">
+                        <div class="card-body">
+                            <h4 class="card-title">Flash 1</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 <script src="lib/bootstrap.bundle.min.js"></script>
