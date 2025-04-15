@@ -34,7 +34,8 @@ body{
     color: #e15f41;
 }
 
-.nav-cardapio .nav-link.active{
+.nav-cardapio .nav-link.active,
+#fale-conosco button{
     background-color: #e15f41;
     color: #fff;
 }
@@ -50,4 +51,10 @@ body{
 
 .social-links a{
     text-decoration: none;
+}
+
+@media (max-width: 767px){
+    .carousel-item img{
+        height: 280px;
+    }
 }

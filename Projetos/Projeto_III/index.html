@@ -48,18 +48,18 @@
             </nav>
         </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
         <section id="sobre-o-restaurante">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./images/slides/slide1.png" class="w-100" alt="Foto do espaço interno do restaurante">
+                        <img src="./images/slides/slide1.png" class="img-fluid" alt="Foto do espaço interno do restaurante">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./images/slides/slide2.png" class="w-100" alt="Duas taças de vinho">
+                        <img src="./images/slides/slide2.png" class="img-fluid" alt="Duas taças de vinho">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./images/slides/slide3.png" class="w-100" alt="Uma mesa com comida">
+                        <img src="./images/slides/slide3.png" class="img-fluid" alt="Uma mesa com comida">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -80,7 +80,7 @@
                         <div class="col-md-5">
                             <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-3 mt-md-0">
                             <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut delectus, explicabo esse excepturi nemo, repellendus iste ducimus sint cupiditate ab, quas reprehenderit harum? Minus, omnis accusantium molestiae quia magni amet.
@@ -333,25 +333,25 @@
                     <h2 class="section-title text-center"> Fale <span class="text-colored">conosco</span></h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 mb-5">
                         <form>
-                            <div>
-                                <label for="nome" class="form-label">Seu nome</label>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
                                 <input type="text" id="nome" class="form-control" required>
                             </div>
-                            <div>
-                                <label for="email" class="form-label">Seu e-mail</label>
+                            <div class="mb-3">
+                                <label for="email" class="form-label  fw-bold text-colored">Seu e-mail</label>
                                 <input type="email" id="email" class="form-control" required>
                             </div>
-                            <div>
-                                <label for="telefone" class="form-label">Seu telefone (opcional)</label>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label  fw-bold text-colored">Seu telefone (opcional)</label>
                                 <input type="tel" id="telefone" class="form-control">
                             </div>
-                            <div>
-                                <label for="mensagem" class="form-label">Sua mensagem</label>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label  fw-bold text-colored">Sua mensagem</label>
                                 <textarea class="form-control" id="mensagem" required></textarea>
                             </div>
-                            <button type="submit" class="btn">Enviar</button>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
                         </form>
                     </div>
                     <div class="col-md-5">
