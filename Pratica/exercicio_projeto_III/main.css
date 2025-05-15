@@ -1,0 +1,162 @@
+:root {
+    --cor-primaria: #0f0f0f;
+    --cor-secundaria: #1a1a1a;
+    --cor-destaque: #00ffe1;
+    --cor-contraste: #ff4d4d;
+    --fonte-titulo: 'Orbitron', sans-serif;
+    --fonte-texto: 'Rajdhani', sans-serif;
+}
+
+body{
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-primaria);
+    color: #e0e0e0; /* Cor de texto padrão para boa leitura em fundos escuros */
+}
+
+.navbar{
+    background-color: var(--cor-secundaria);
+    border-bottom: 1px solid #333; /* Mantendo uma separação sutil */
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
+    border-radius: 5px;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover{
+    color: var(--cor-destaque);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover{
+    color: var(--cor-contraste);
+}
+
+.navbar-toggler{
+    background-color: var(--cor-destaque);
+}
+
+.section-title{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque);
+    text-shadow: 0 0 5px var(--cor-destaque), 0 0 10px var(--cor-destaque);
+}
+
+#sobre-a-loja, #catalogo{
+    background-color: var(--cor-secundaria);
+}
+
+.text-neon{
+    color: var(--cor-destaque);
+    text-shadow: 0 0 5px var(--cor-destaque), 0 0 0 var(--cor-destaque);
+}
+
+.text-contraste {
+    color: var(--cor-contraste);
+    text-shadow: 0 0 5px var(--cor-contraste), 0 0 10px var(--cor-contraste);
+}
+
+.text-flicker {
+    animation: flicker 1.5s infinite alternate;
+}
+
+.jogo3{
+    max-height: 240px;
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 0.8;
+        text-shadow: 0 0 5px var(--cor-destaque), 0 0 10px var(--cor-destaque);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 15px var(--cor-destaque), 0 0 25px var(--cor-destaque);
+    }
+}
+
+.nav-cardapio .nav-link.active,
+#contato button{
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-cardapio .nav-link:hover{
+    color: var(--cor-destaque);
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: var(--cor-destaque);
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover{
+    color: var(--cor-contraste);
+}
+
+#contato button:hover{
+    background-color: var(--cor-contraste);
+    color: var(--cor-primaria);
+}
+
+#contato input,
+#contato textarea {
+    background-color: var(--cor-secundaria);
+    color: #e0e0e0;
+    border: 1px solid #333; /* Adicionando uma borda sutil para melhor visualização */
+}
+
+::placeholder { /* Estilo para o texto de placeholder nos inputs */
+    color: #777;
+}
+
+.btn-neon {
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px var(--cor-destaque);
+}
+
+.btn-neon:hover {
+    background-color: var(--cor-contraste);
+    color: var(--cor-primaria);
+    box-shadow: 0 0 15px var(--cor-contraste);
+}
+
+@media (max-width: 767px){
+    .carousel-item img{
+        height: 280px;
+        object-fit: cover;
+    }
+    .nav-pills.d-block.d-md-flex {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+    }
+    .nav-item {
+        margin-bottom: 0 !important;
+    }
+}
